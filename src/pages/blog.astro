@@ -1,0 +1,176 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const posts = [
+    {
+        title: "Ist das MPU Umgehen mit einem EU-Führerschein legal?",
+        excerpt: "Erfahren Sie alles über die rechtliche Lage 2026, Fristen und legale Alternativen zur MPU in Deutschland.",
+        link: "/blog/mpu-umgehen-legal",
+        date: "27. Jan 2026",
+        category: "Ratgeber",
+        image: "⚖️"
+    },
+    {
+        title: "Führerschein aus Tschechien: Gültigkeit in Deutschland",
+        excerpt: "Ist ein tschechischer Führerschein in Deutschland gültig? Wir klären auf über Rechtslage und Polizeikontrollen.",
+        link: "/blog/fuehrerschein-aus-tschechien-gueltigkeit",
+        date: "15. Jan 2026",
+        category: "Länder",
+        image: "🇨🇿"
+    },
+    {
+        title: "EU-Führerschein Rechtslage 2026",
+        excerpt: "Aktuelle Rechtslage zum EU-Führerschein in Deutschland. Was sagen EuGH und deutsche Gerichte?",
+        link: "/blog/eu-fuehrerschein-rechtslage-2025",
+        date: "02. Feb 2026",
+        category: "Recht",
+        image: "🇪🇺"
+    },
+    {
+        title: "Führerschein erwerben ohne Prüfung: Der Guide",
+        excerpt: "Ein umfassender Leitfaden, wie Sie sicher und legal einen Führerschein ohne Prüfung erwerben können.",
+        link: "/blog/fuehrerschein-erwerben-ohne-pruefung",
+        date: "24. Jan 2026",
+        category: "Service",
+        image: "🎓"
+    },
+    {
+        title: "Echten Führerschein kaufen: Merkmale",
+        excerpt: "Lernen Sie, wie Sie echte registrierte Dokumente von gefälschten unterscheiden können.",
+        link: "/blog/echten-fuehrerschein-kaufen",
+        date: "25. Jan 2026",
+        category: "Sicherheit",
+        image: "🔍"
+    },
+    {
+        title: "Internationalen Führerschein kaufen",
+        excerpt: "Planen Sie Work & Travel oder einen Auslandsaufenthalt? Wir besorgen Ihnen den internationalen Führerschein.",
+        link: "/blog/internationalen-fuehrerschein-kaufen",
+        date: "26. Jan 2026",
+        category: "Reisen",
+        image: "🌍"
+    },
+    {
+        title: "Führerschein kaufen legal?",
+        excerpt: "Wir beleuchten die rechtlichen Rahmenbedingungen und Möglichkeiten des legalen Erwerbs.",
+        link: "/blog/fuehrerschein-kaufen-legal",
+        date: "24. Jan 2026",
+        category: "Recht",
+        image: "📜"
+    },
+    {
+        title: "Motorrad Führerschein kaufen",
+        excerpt: "Freiheit auf zwei Rädern genießen. Klasse A, A1 und A2 ohne Prüfung erwerben.",
+        link: "/blog/motorrad-fuehrerschein-kaufen",
+        date: "27. Jan 2026",
+        category: "Motorrad",
+        image: "🏍️"
+    },
+    {
+        title: "PKW Führerschein kaufen (Klasse B)",
+        excerpt: "Der schnellste Weg zum Autoführerschein. Klasse B einfach und sicher bestellen.",
+        link: "/blog/pkw-fuehrerschein-kaufen",
+        date: "28. Jan 2026",
+        category: "Auto",
+        image: "🚗"
+    },
+    {
+        title: "Führerschein zurück ohne MPU",
+        excerpt: "Der Ausweg aus der MPU-Falle. So erhalten Sie Ihre Fahrerlaubnis zurück.",
+        link: "/blog/fuehrerschein-zurueck-ohne-mpu",
+        date: "29. Jan 2026",
+        category: "MPU",
+        image: "🚫"
+    },
+    {
+        title: "Führerschein umschreiben lassen ohne Prüfung",
+        excerpt: "Ausländische Führerscheine einfach umschreiben. Kein Stress mit deutschen Behörden.",
+        link: "/blog/fuehrerschein-umschreiben-lassen-ohne-pruefung",
+        date: "30. Jan 2026",
+        category: "Service",
+        image: "🔄"
+    },
+    {
+        title: "Führerschein Klasse B kaufen Preis",
+        excerpt: "Was kostet der Führerscheinkauf wirklich? Transparente Kostenübersicht.",
+        link: "/blog/fuehrerschein-klasse-b-kaufen-preis",
+        date: "31. Jan 2026",
+        category: "Kosten",
+        image: "💶"
+    },
+    {
+        title: "Polnischen Führerschein legal kaufen",
+        excerpt: "Profitieren Sie von der EU-Rechtslage in Polen. Legal und sicher zum EU-Führerschein.",
+        link: "/blog/polnischen-fuehrerschein-legal-kaufen",
+        date: "01. Feb 2026",
+        category: "EU-Nachbarn",
+        image: "🇵🇱"
+    }
+];
+---
+
+<Layout title="Blog & Ratgeber | Führerschein Agentur Europa" description="Aktuelle Nachrichten und Ratgeber rund um das Thema EU-Führerschein ohne Prüfung, MPU Umgehung und Rechtslage.">
+	
+	<main class="bg-gray-50 min-h-screen">
+		<!-- Hero Section -->
+		<section class="bg-blue-900 text-white py-24 relative overflow-hidden">
+             <div class="absolute inset-0 bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 z-0"></div>
+             <img src="/images/background-hero.webp" alt="Background" class="absolute inset-0 w-full h-full object-cover opacity-45 z-0 mix-blend-overlay" />
+              <!-- Decorative blobs -->
+            <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
+            <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-400 opacity-10 blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
+            
+			<div class="container mx-auto px-4 text-center relative z-10">
+				<h1 class="text-4xl lg:text-5xl font-black mb-6 tracking-tight">Magazin & Ratgeber</h1>
+				<p class="text-xl text-blue-100 max-w-2xl mx-auto font-light">
+                    Expertenwissen, aktuelle Urteile und Tipps rund um Ihren Weg zurück zum Führerschein.
+                </p>
+			</div>
+		</section>
+
+		<!-- Content -->
+		<section class="py-24">
+			<div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    {posts.map((post) => (
+                        <article class="bg-white shadow-lg border border-gray-100 overflow-hidden hover:-translate-y-2 transition-all duration-300 flex flex-col h-full group">
+                            <div class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center relative overflow-hidden">
+                                <span class="text-6xl transform group-hover:scale-110 transition duration-500">{post.image}</span>
+                                <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-xs font-bold px-3 py-1 text-blue-900 uppercase tracking-wide">
+                                    {post.category}
+                                </div>
+                            </div>
+                            <div class="p-8 flex flex-col flex-grow">
+                                <div class="text-xs text-gray-400 font-bold mb-3">{post.date}</div>
+                                <h2 class="text-xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-blue-600 transition-colors">
+                                    <a href={post.link}>
+                                        {post.title}
+                                    </a>
+                                </h2>
+                                <p class="text-gray-600 text-sm mb-6 flex-grow leading-relaxed">
+                                    {post.excerpt}
+                                </p>
+                                <a href={post.link} class="inline-flex items-center font-bold text-blue-600 hover:text-blue-800 transition">
+                                    Artikel lesen
+                                    <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                                </a>
+                            </div>
+                        </article>
+                    ))}
+
+                </div>
+			</div>
+		</section>
+        
+        <!-- Newsletter / Contact Teaser -->
+         <section class="py-16 bg-white">
+            <div class="container mx-auto px-4 max-w-4xl text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Haben Sie spezifische Fragen?</h2>
+                <p class="text-gray-600 mb-8">Unser Expertenteam steht Ihnen für eine individuelle Analyse Ihrer Situation zur Verfügung.</p>
+                <a href="/kontakt" class="bg-gray-900 text-white font-bold py-3 px-8 hover:bg-gray-800 transition shadow-lg">Kontakt aufnehmen</a>
+            </div>
+        </section>
+
+	</main>
+</Layout>
