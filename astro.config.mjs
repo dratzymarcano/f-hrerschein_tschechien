@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://führerschein-agentur.com',
+  site: 'https://koeln-fuehrerschein.de',
   integrations: [sitemap()],
   vite: {
     plugins: [tailwindcss()]

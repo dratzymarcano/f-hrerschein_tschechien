@@ -5,7 +5,7 @@ export async function GET() {
     // Manually defined important pages
     const mainPages = [
         { title: "Home", slug: "/", description: "Führerschein Kaufen Ohne Prüfung" },
-        { title: "Über Uns", slug: "/uber-uns", description: "Ihre Vertrauenswürdige Führerschein-Agentur" },
+        { title: "Über Uns", slug: "/uber-uns", description: "Koeln-Fuehrerschein - Ihr Partner für EU-Führerscheine" },
         { title: "Kontakt", slug: "/kontakt", description: "Kontaktieren Sie Uns" },
         { title: "FAQs", slug: "/faqs", description: "Häufig Gestellte Fragen" },
         { title: "Deutscher Führerschein Kaufen", slug: "/eu-fuhrerschein-kaufen/fuhrerschein-kaufen", description: "Kaufen Deutschen Führerschein" },

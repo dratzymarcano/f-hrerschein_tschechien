@@ -1,0 +1,287 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const pageSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://koeln-fuehrerschein.de/eu-fuhrerschein-kaufen/fuhrerschein-in-ungarn-kaufen/#service",
+      "name": "Ungarischer Führerschein kaufen",
+      "description": "Führerschein in Ungarn kaufen – legal, registriert und ohne Prüfung. EU-weit gültig. Schnelle Abwicklung in 7-10 Tagen.",
+      "provider": {
+        "@id": "https://koeln-fuehrerschein.de/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Deutschland"
+      },
+      "serviceType": "EU Führerschein",
+      "offers": {
+        "@type": "Offer",
+        "price": "1400",
+        "priceCurrency": "EUR",
+        "priceValidUntil": "2026-12-31",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Ist der ungarische Führerschein in Deutschland gültig?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, gemäß der 3. EU-Führerscheinrichtlinie sind Dokumente aus Ungarn in allen EU-Staaten, inklusive Deutschland, uneingeschränkt gültig. Eine Umschreibung ist nicht zwingend notwendig."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kann ich mit einem ungarischen Führerschein die MPU umgehen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, der Erwerb einer neuen Fahrerlaubnis im EU-Ausland ist eine legale Möglichkeit, die MPU in Deutschland zu umgehen, sofern Ihre Sperrfrist abgelaufen ist und das Wohnsitzprinzip eingehalten wurde."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie lange dauert die Lieferung des ungarischen Führerscheins?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dank unserer Kontakte zu den Behörden in Budapest können wir eine Express-Abwicklung innerhalb von 7-10 Werktagen anbieten."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was kostet der Führerschein aus Ungarn?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Die Preise beginnen bei uns ab 1.400 € für die Klasse B (PKW). Dies beinhaltet alle Behördengebühren, die Wohnsitzmeldung und unseren Full-Service."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Muss ich nach Ungarn reisen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein, eine Reise nach Ungarn ist nicht erforderlich. Wir kümmern uns um alle behördlichen Angelegenheiten und senden Ihren Führerschein diskret per Post zu."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Startseite",
+          "item": "https://koeln-fuehrerschein.de"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "EU Führerscheine",
+          "item": "https://koeln-fuehrerschein.de/eu-fuhrerschein-kaufen"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Ungarischer Führerschein",
+          "item": "https://koeln-fuehrerschein.de/eu-fuhrerschein-kaufen/fuhrerschein-in-ungarn-kaufen"
+        }
+      ]
+    }
+  ]
+});
+---
+
+<Layout title="Ungarischen Führerschein Kaufen | Legal & Registriert | Koeln-Fuehrerschein" description="Führerschein in Ungarn kaufen – legal, registriert und ohne Prüfung. EU-weit gültig. Schnelle Abwicklung in 7-10 Tagen. MPU umgehen mit ungarischem Führerschein." schema={pageSchema}>
+	
+	<main class="bg-white">
+        <!-- Page Header -->
+		<section class="bg-blue-900 text-white py-24 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 z-0"></div>
+            <img src="/images/background-hero.webp" alt="Background" class="absolute inset-0 w-full h-full object-cover opacity-45 z-0 mix-blend-overlay" />
+            <div class="absolute inset-0 overflow-hidden opacity-20 pointer-events-none">
+                 <div class="absolute -top-24 -left-24 w-96 h-96  bg-green-400 blur-[100px]"></div>
+                 <div class="absolute bottom-0 right-0 w-80 h-80  bg-red-500 blur-[100px]"></div>
+            </div>
+			<div class="container mx-auto px-4 text-center relative z-10">
+                 <span class="inline-block py-1 px-4  bg-green-800/50 backdrop-blur-sm border border-green-400/30 text-green-200 text-sm font-semibold mb-6">
+                    🇭🇺 Neu im Angebot
+                </span>
+				<h1 class="text-4xl lg:text-6xl font-black mb-6 tracking-tight">Führerschein in Ungarn Kaufen</h1>
+				<p class="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">
+                    Legal beim KBA registriert. Ohne Prüfung in 7-10 Tagen zum ungarischen EU-Führerschein.
+                </p>
+			</div>
+		</section>
+
+		<section class="py-24">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col lg:flex-row items-center gap-16 mb-24">
+                    <div class="lg:w-1/2">
+                        <div class="relative  overflow-hidden shadow-2xl border-4 border-white transform hover:rotate-1 transition duration-500">
+                             <img src="/images/fuehrerschein-ungarn.webp" alt="Ungarischer Führerschein kaufen" class="w-full h-auto" onerror="this.src='/images/fuehrerschein-ohne-pruefung-kaufen.webp'">
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+                            Legal zum Führerschein in <span class="text-green-600">7-10 Tagen</span> – Ohne MPU & Prüfung
+                        </h2>
+                        <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                            Ungarn ist als EU-Mitglied eine hervorragende Wahl für den Erwerb eines europaweit gültigen Führerscheins. Wenn der deutsche Führerschein entzogen wurde oder eine MPU droht, bietet der <strong>Führerschein aus Ungarn</strong> eine legale Alternative. Wir übernehmen die komplette Abwicklung für Sie – inklusive der notwendigen Wohnsitzanmeldung.
+                        </p>
+                        <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                            Bei Koeln-Fuehrerschein erhalten Sie einen vollständig <strong>in der EUCARIS-Datenbank registrierten ungarischen Führerschein</strong>, der bei jeder Polizeikontrolle in Deutschland und der gesamten EU standhält. Nach nur ca. 7-10 Werktagen halten Sie Ihre neue Fahrerlaubnis in den Händen.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="/kontakt" class="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8  shadow-lg transition duration-300 transform hover:-translate-y-1">
+                                Kontaktieren Sie Uns
+                            </a>
+                            <a href="https://wa.me/4917636664625" class="bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold py-4 px-8  shadow-lg transition duration-300 transform hover:-translate-y-1 flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                                WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-16 items-center mb-24">
+                    <div class="order-2 md:order-1">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Warum einen ungarischen Führerschein?</h3>
+                        <p class="text-gray-600 mb-4 text-lg leading-relaxed">
+                            Ungarn ist seit 2004 EU-Mitglied und bietet alle Vorteile der europäischen Führerscheinrichtlinie. Der Europäische Gerichtshof (EuGH) hat bestätigt, dass Deutschland Führerscheine aus anderen EU-Staaten wie Ungarn anerkennen muss, sofern das Wohnsitzprinzip eingehalten wurde. Unsere Agentur sorgt für eine wasserdichte <strong>Wohnsitzanmeldung</strong> in Ungarn für 185 Tage rückwirkend.
+                        </p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center text-gray-700">
+                                <span class="w-6 h-6  bg-green-100 text-green-600 flex items-center justify-center mr-3 text-sm font-bold">✓</span>
+                                EU-Mitglied seit 2004 – volle Anerkennung
+                            </li>
+                             <li class="flex items-center text-gray-700">
+                                <span class="w-6 h-6  bg-green-100 text-green-600 flex items-center justify-center mr-3 text-sm font-bold">✓</span>
+                                Registriert in EUCARIS-Datenbank
+                            </li>
+                             <li class="flex items-center text-gray-700">
+                                <span class="w-6 h-6  bg-green-100 text-green-600 flex items-center justify-center mr-3 text-sm font-bold">✓</span>
+                                Günstiger als deutsche Fahrschule + MPU
+                            </li>
+                             <li class="flex items-center text-gray-700">
+                                <span class="w-6 h-6  bg-green-100 text-green-600 flex items-center justify-center mr-3 text-sm font-bold">✓</span>
+                                Keine Angst vor Polizeikontrollen
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <div class="relative overflow-hidden shadow-2xl border-4 border-white transform hover:-rotate-1 transition duration-500 bg-gradient-to-br from-red-600 via-white to-green-600 p-1">
+                            <div class="bg-white p-8 text-center">
+                                <div class="text-8xl mb-4">🇭🇺</div>
+                                <h4 class="text-2xl font-bold text-gray-900 mb-2">Ungarn</h4>
+                                <p class="text-gray-600">EU-Mitglied seit 2004</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Advantages Section -->
+                <div class="bg-gray-50 p-10 lg:p-16 mb-24 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-green-100 mix-blend-multiply opacity-50 blur-3xl"></div>
+                    <div class="relative z-10">
+                        <h3 class="text-3xl font-bold text-center text-gray-900 mb-12">Vorteile des ungarischen Führerscheins</h3>
+                        <div class="grid md:grid-cols-3 gap-8">
+                            <div class="bg-white p-8 shadow-lg border border-gray-100 text-center hover:-translate-y-2 transition duration-300">
+                                <div class="w-16 h-16 bg-green-50 flex items-center justify-center text-3xl mx-auto mb-6">🏛️</div>
+                                <h4 class="font-bold text-xl mb-3 text-gray-900">EU-Recht konform</h4>
+                                <p class="text-gray-600">Ungarn ist vollwertiges EU-Mitglied. Ihr Führerschein gilt in allen 27 EU-Ländern ohne Einschränkungen.</p>
+                            </div>
+                            <div class="bg-white p-8 shadow-lg border border-gray-100 text-center hover:-translate-y-2 transition duration-300">
+                                <div class="w-16 h-16 bg-green-50 flex items-center justify-center text-3xl mx-auto mb-6">💰</div>
+                                <h4 class="font-bold text-xl mb-3 text-gray-900">Kostengünstig</h4>
+                                <p class="text-gray-600">Deutlich günstiger als eine deutsche Fahrschule kombiniert mit MPU-Kosten von oft über 5.000€.</p>
+                            </div>
+                            <div class="bg-white p-8 shadow-lg border border-gray-100 text-center hover:-translate-y-2 transition duration-300">
+                                <div class="w-16 h-16 bg-green-50 flex items-center justify-center text-3xl mx-auto mb-6">⚡</div>
+                                <h4 class="font-bold text-xl mb-3 text-gray-900">Schnelle Abwicklung</h4>
+                                <p class="text-gray-600">In nur 7-10 Werktagen erhalten Sie Ihren neuen Führerschein direkt nach Hause geliefert.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Section for Hungarian License -->
+                 <div class="max-w-4xl mx-auto mb-24">
+                    <h3 class="text-3xl font-bold text-center text-gray-900 mb-12">Häufige Fragen zum Ungarn-Führerschein</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white border border-gray-200 p-6 shadow-sm hover:shadow-md transition">
+                            <h4 class="text-xl font-semibold text-green-800 mb-2">Ist der ungarische Führerschein in Deutschland gültig?</h4>
+                            <p class="text-gray-600">Ja, gemäß der 3. EU-Führerscheinrichtlinie sind Dokumente aus Ungarn in allen EU-Staaten, inklusive Deutschland, uneingeschränkt gültig. Eine Umschreibung ist nicht zwingend notwendig.</p>
+                        </div>
+                        <div class="bg-white border border-gray-200 p-6 shadow-sm hover:shadow-md transition">
+                            <h4 class="text-xl font-semibold text-green-800 mb-2">Kann ich mit einem ungarischen Führerschein die MPU umgehen?</h4>
+                            <p class="text-gray-600">Ja, der Erwerb einer neuen Fahrerlaubnis im EU-Ausland ist eine legale Möglichkeit, die MPU in Deutschland zu umgehen, sofern Ihre Sperrfrist abgelaufen ist und das Wohnsitzprinzip eingehalten wurde.</p>
+                        </div>
+                        <div class="bg-white border border-gray-200 p-6 shadow-sm hover:shadow-md transition">
+                            <h4 class="text-xl font-semibold text-green-800 mb-2">Wie lange dauert die Lieferung?</h4>
+                            <p class="text-gray-600">Dank unserer Kontakte zu den Behörden in Budapest können wir eine Express-Abwicklung innerhalb von 7-10 Werktagen anbieten.</p>
+                        </div>
+                        <div class="bg-white border border-gray-200 p-6 shadow-sm hover:shadow-md transition">
+                            <h4 class="text-xl font-semibold text-green-800 mb-2">Was kostet der Führerschein aus Ungarn?</h4>
+                            <p class="text-gray-600">Die Preise beginnen bei uns ab 1.400 € für die Klasse B (PKW). Dies beinhaltet alle Behördengebühren, die Wohnsitzmeldung und unseren Full-Service.</p>
+                        </div>
+                        <div class="bg-white border border-gray-200 p-6 shadow-sm hover:shadow-md transition">
+                            <h4 class="text-xl font-semibold text-green-800 mb-2">Muss ich nach Ungarn reisen?</h4>
+                            <p class="text-gray-600">Nein, eine Reise nach Ungarn ist nicht erforderlich. Wir kümmern uns um alle behördlichen Angelegenheiten und senden Ihren Führerschein diskret per Post zu.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50  p-10 lg:p-16 mb-24 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-green-100  mix-blend-multiply opacity-50 blur-3xl"></div>
+                    <div class="relative z-10">
+                        <h3 class="text-3xl font-bold text-center text-gray-900 mb-12">Preise im Überblick</h3>
+                        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Ungarische Führerscheine bieten ein hervorragendes Preis-Leistungs-Verhältnis.</p>
+                        <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                            <div class="bg-white p-8  shadow-lg border border-gray-100 text-center hover:-translate-y-2 transition duration-300">
+                                <div class="w-16 h-16 bg-green-50  flex items-center justify-center text-3xl mx-auto mb-6">🚗</div>
+                                <h4 class="font-bold text-xl mb-3 text-gray-900">Klasse B (PKW)</h4>
+                                <p class="text-gray-600 mb-4">Der Klassiker für Autos.</p>
+                                <p class="text-4xl font-bold text-green-600">ab 1.400 €</p>
+                            </div>
+                            <div class="bg-white p-8  shadow-lg border border-gray-100 text-center hover:-translate-y-2 transition duration-300">
+                                <div class="w-16 h-16 bg-green-50  flex items-center justify-center text-3xl mx-auto mb-6">🏍️</div>
+                                <h4 class="font-bold text-xl mb-3 text-gray-900">Klasse A (Motorrad)</h4>
+                                <p class="text-gray-600 mb-4">Freiheit auf zwei Rädern.</p>
+                                <p class="text-4xl font-bold text-green-600">ab 650 €</p>
+                            </div>
+                            <div class="bg-white p-8  shadow-lg border border-gray-100 text-center hover:-translate-y-2 transition duration-300 border-2 border-green-500 relative">
+                                <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-green-500 text-white text-xs font-bold py-1 px-3 uppercase">Beliebt</div>
+                                <div class="w-16 h-16 bg-green-50  flex items-center justify-center text-3xl mx-auto mb-6">🚗🏍️</div>
+                                <h4 class="font-bold text-xl mb-3 text-gray-900">Kombi B + A</h4>
+                                <p class="text-gray-600 mb-4">PKW & Motorrad zusammen.</p>
+                                <p class="text-4xl font-bold text-green-600">ab 1.800 €</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-green-600 to-emerald-700  p-12 text-center text-white shadow-2xl">
+                    <h3 class="text-3xl lg:text-4xl font-bold mb-6">Starten Sie jetzt mit Ihrem ungarischen Führerschein</h3>
+                    <p class="text-xl text-green-100 mb-8 max-w-2xl mx-auto">Legal, sicher und in der EU-Datenbank registriert. Kontaktieren Sie uns noch heute!</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="/kontakt" class="inline-block bg-white text-green-600 font-bold py-4 px-10  hover:bg-gray-100 transition duration-300 shadow-lg transform hover:-translate-y-1">
+                            BESTELLUNG STARTEN
+                        </a>
+                        <a href="https://wa.me/4917636664625" class="inline-block bg-green-800 text-white font-bold py-4 px-10  hover:bg-green-900 transition duration-300 shadow-lg transform hover:-translate-y-1 flex items-center justify-center gap-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654z"/></svg>
+                            WhatsApp Kontakt
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+		</section>
+
+	</main>
+</Layout>

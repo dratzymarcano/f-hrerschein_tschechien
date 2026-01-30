@@ -10,6 +10,7 @@ interface Props {
 }
 
 const { title, description = "Führerschein kaufen ohne Prüfung – Legal & Registriert in Deutschland. MPU Gutachten kaufen, Bootsführerschein und Angelschein ohne Wartezeit.", schema } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
@@ -17,23 +18,36 @@ const { title, description = "Führerschein kaufen ohne Prüfung – Legal & Reg
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
-        <meta name="keywords" content="führerschein kaufen ohne prüfung, registrierten führerschein kaufen, mpu kaufen, eu führerschein, führerschein deutschland kaufen, führerschein österreich kaufen, führerschein schweiz kaufen, führerschein polen, führerschein tschechien, legal führerschein, express führerschein, kba registriert, führerschein ohne mpu, führerschein klasse b kaufen, führerschein kaufen online, führerschein kaufen legal, führerschein kaufen erfahrung" />
+        <meta name="keywords" content="führerschein kaufen köln, führerschein kaufen ohne prüfung, registrierten führerschein kaufen, mpu kaufen köln, eu führerschein, führerschein deutschland kaufen, führerschein österreich kaufen, führerschein schweiz kaufen, führerschein polen, führerschein tschechien, führerschein ungarn, legal führerschein köln, express führerschein, kba registriert, führerschein ohne mpu, führerschein klasse b kaufen, führerschein kaufen online, führerschein kaufen legal, führerschein kaufen erfahrung, koeln fuehrerschein" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="robots" content="index, follow" />
-        <meta name="author" content="Führerschein Agentur" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="author" content="Koeln-Fuehrerschein" />
+        <meta name="geo.region" content="DE-NW" />
+        <meta name="geo.placename" content="Köln" />
+        <meta name="geo.position" content="50.937531;6.960279" />
+        <meta name="ICBM" content="50.937531, 6.960279" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="canonical" href={canonicalURL} />
 		<meta name="generator" content={Astro.generator} />
         
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://führerschein-agentur.com/" />
+        <meta property="og:url" content={canonicalURL} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
+        <meta property="og:image" content="https://koeln-fuehrerschein.de/images/og-image.webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Koeln-Fuehrerschein - Führerschein kaufen ohne Prüfung" />
+        <meta property="og:site_name" content="Koeln-Fuehrerschein" />
+        <meta property="og:locale" content="de_DE" />
         
         <!-- Twitter -->
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:title" content={title} />
-        <meta property="twitter:description" content={description} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={canonicalURL} />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content="https://koeln-fuehrerschein.de/images/og-image.webp" />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,19 +61,108 @@ const { title, description = "Führerschein kaufen ohne Prüfung – Legal & Reg
         <script type="application/ld+json">
             {
               "@context": "https://schema.org",
-              "@type": "Consultant",
-              "name": "Führerschein Agentur Europa",
-              "image": "https://führerschein-agentur.com/logo.png",
-              "description": "Ihr Partner für legale EU-Führerscheine, MPU-Gutachten und Bootsführerscheine ohne Prüfung.",
+              "@type": "LocalBusiness",
+              "@id": "https://koeln-fuehrerschein.de/#organization",
+              "name": "Koeln-Fuehrerschein",
+              "alternateName": "Köln Führerschein",
+              "image": "https://koeln-fuehrerschein.de/images/og-image.webp",
+              "logo": "https://koeln-fuehrerschein.de/images/logo.png",
+              "description": "Ihr Partner für legale EU-Führerscheine, MPU-Gutachten und Bootsführerscheine ohne Prüfung in Köln und ganz Deutschland.",
+              "url": "https://koeln-fuehrerschein.de",
+              "telephone": "+4917636664625",
+              "email": "koeln-fuehrerschein@proton.me",
               "address": {
-
                 "@type": "PostalAddress",
+                "streetAddress": "Domkloster 4",
+                "addressLocality": "Köln",
+                "postalCode": "50667",
+                "addressRegion": "Nordrhein-Westfalen",
                 "addressCountry": "DE"
               },
-              "priceRange": "€€€"
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 50.937531,
+                "longitude": 6.960279
+              },
+              "areaServed": [
+                {
+                  "@type": "Country",
+                  "name": "Deutschland"
+                },
+                {
+                  "@type": "Country", 
+                  "name": "Österreich"
+                },
+                {
+                  "@type": "Country",
+                  "name": "Schweiz"
+                }
+              ],
+              "serviceType": ["Führerschein kaufen", "MPU Gutachten", "EU Führerschein", "Bootsführerschein", "Angelschein"],
+              "priceRange": "€€€",
+              "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                "opens": "00:00",
+                "closes": "23:59"
+              },
+              "sameAs": [
+                "https://wa.me/4917636664625"
+              ],
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Führerschein Services",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Deutscher Führerschein",
+                      "description": "Deutschen Führerschein kaufen ohne Prüfung - legal und registriert"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "EU Führerschein",
+                      "description": "EU Führerschein aus Polen, Tschechien, Ungarn und Österreich"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "MPU Gutachten",
+                      "description": "Positives MPU Gutachten ohne Prüfung"
+                    }
+                  }
+                ]
+              }
             }
         </script>
         )}
+        
+        <!-- Website Schema -->
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "@id": "https://koeln-fuehrerschein.de/#website",
+              "url": "https://koeln-fuehrerschein.de",
+              "name": "Koeln-Fuehrerschein",
+              "description": "Führerschein kaufen ohne Prüfung - Legal & Registriert in Köln",
+              "publisher": {
+                "@id": "https://koeln-fuehrerschein.de/#organization"
+              },
+              "inLanguage": "de-DE",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://koeln-fuehrerschein.de/?s={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            }
+        </script>
 	</head>
 	<body class="font-sans text-gray-800 bg-gray-50 flex flex-col min-h-screen">
         <Header />

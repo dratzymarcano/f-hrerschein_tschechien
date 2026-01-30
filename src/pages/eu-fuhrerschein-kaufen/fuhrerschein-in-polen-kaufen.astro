@@ -1,8 +1,30 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+
+const pageSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Polnischer Führerschein kaufen",
+      "description": "Führerschein in Polen kaufen ohne Prüfung. Legal, EU-weit gültig.",
+      "provider": { "@id": "https://koeln-fuehrerschein.de/#organization" },
+      "areaServed": { "@type": "Country", "name": "Deutschland" },
+      "serviceType": "EU Führerschein"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://koeln-fuehrerschein.de" },
+        { "@type": "ListItem", "position": 2, "name": "EU Führerscheine", "item": "https://koeln-fuehrerschein.de/eu-fuhrerschein-kaufen" },
+        { "@type": "ListItem", "position": 3, "name": "Polnischer Führerschein", "item": "https://koeln-fuehrerschein.de/eu-fuhrerschein-kaufen/fuhrerschein-in-polen-kaufen" }
+      ]
+    }
+  ]
+});
 ---
 
-<Layout title="Führerschein aus Polen Kaufen | Ohne MPU">
+<Layout title="Polnischen Führerschein Kaufen | Ohne MPU | Koeln-Fuehrerschein" description="Polnischen Führerschein kaufen ohne Prüfung in Köln. Legal, EU-weit gültig, KBA registriert. MPU umgehen. Express-Lieferung!" schema={pageSchema}>
 	
 	<main class="bg-white">
         <!-- Page Header -->

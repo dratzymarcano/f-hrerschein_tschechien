@@ -1,8 +1,45 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const pageSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://koeln-fuehrerschein.de/mpu-gutachten-kaufen/#service",
+      "name": "MPU Gutachten kaufen",
+      "description": "Positives MPU Gutachten kaufen ohne Prüfung. Legal und diskret. Führerschein zurück ohne MPU.",
+      "provider": {
+        "@id": "https://koeln-fuehrerschein.de/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Deutschland"
+      },
+      "serviceType": "MPU Gutachten"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Startseite",
+          "item": "https://koeln-fuehrerschein.de"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "MPU Gutachten",
+          "item": "https://koeln-fuehrerschein.de/mpu-gutachten-kaufen"
+        }
+      ]
+    }
+  ]
+});
 ---
 
-<Layout title="MPU Gutachten Kaufen | Ohne Prüfung">
+<Layout title="MPU Gutachten Kaufen | Ohne Prüfung | Köln | Koeln-Fuehrerschein" description="MPU Gutachten kaufen in Köln ✓ Positives Ergebnis garantiert ✓ Führerschein zurück ohne MPU ✓ Diskret & Legal. Jetzt unverbindlich beraten lassen!" schema={pageSchema}>
 	
 	<main class="bg-white">
         <!-- Page Header -->

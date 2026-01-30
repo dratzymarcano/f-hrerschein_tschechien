@@ -1,8 +1,51 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+
+const pageSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://koeln-fuehrerschein.de/eu-fuhrerschein-kaufen/fuhrerschein-kaufen/#service",
+      "name": "Deutscher Führerschein kaufen",
+      "description": "Deutschen Führerschein kaufen ohne Prüfung - legal, registriert und KBA-konform.",
+      "provider": {
+        "@id": "https://koeln-fuehrerschein.de/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Deutschland"
+      },
+      "serviceType": "Führerschein Klasse B"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Startseite",
+          "item": "https://koeln-fuehrerschein.de"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "EU Führerscheine",
+          "item": "https://koeln-fuehrerschein.de/eu-fuhrerschein-kaufen"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Deutscher Führerschein",
+          "item": "https://koeln-fuehrerschein.de/eu-fuhrerschein-kaufen/fuhrerschein-kaufen"
+        }
+      ]
+    }
+  ]
+});
 ---
 
-<Layout title="Deutschen Führerschein Kaufen | Ohne Prüfung">
+<Layout title="Deutschen Führerschein Kaufen | Ohne Prüfung | Koeln-Fuehrerschein" description="Deutschen Führerschein kaufen ohne Prüfung in Köln. Legal, KBA registriert und sofort gültig. Express-Lieferung. MPU umgehen - jetzt beraten lassen!" schema={pageSchema}>
 	
 	<main class="bg-white">
         <!-- Page Header -->

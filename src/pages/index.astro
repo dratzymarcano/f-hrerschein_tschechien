@@ -1,8 +1,84 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const homeSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://koeln-fuehrerschein.de/#webpage",
+      "url": "https://koeln-fuehrerschein.de",
+      "name": "Führerschein Kaufen Ohne Prüfung - Legal & Registriert | Koeln-Fuehrerschein",
+      "isPartOf": {
+        "@id": "https://koeln-fuehrerschein.de/#website"
+      },
+      "about": {
+        "@id": "https://koeln-fuehrerschein.de/#organization"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://koeln-fuehrerschein.de/images/og-image.webp"
+      },
+      "description": "Führerschein kaufen ohne Prüfung in Köln. Legal, registriert und EU-weit gültig. MPU umgehen mit EU-Führerschein. Express-Lieferung in 7-10 Tagen.",
+      "breadcrumb": {
+        "@id": "https://koeln-fuehrerschein.de/#breadcrumb"
+      },
+      "inLanguage": "de-DE"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://koeln-fuehrerschein.de/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Startseite",
+          "item": "https://koeln-fuehrerschein.de"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "name": "Führerschein Services",
+      "description": "Unsere Führerschein-Services in Köln",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Deutscher Führerschein",
+          "url": "https://koeln-fuehrerschein.de/eu-fuhrerschein-kaufen/fuhrerschein-kaufen"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Polnischer Führerschein",
+          "url": "https://koeln-fuehrerschein.de/eu-fuhrerschein-kaufen/fuhrerschein-in-polen-kaufen"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tschechischer Führerschein",
+          "url": "https://koeln-fuehrerschein.de/eu-fuhrerschein-kaufen/fuhrerschein-in-tschechien-legal-kaufen"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Ungarischer Führerschein",
+          "url": "https://koeln-fuehrerschein.de/eu-fuhrerschein-kaufen/fuhrerschein-in-ungarn-kaufen"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "MPU Gutachten",
+          "url": "https://koeln-fuehrerschein.de/mpu-gutachten-kaufen"
+        }
+      ]
+    }
+  ]
+});
 ---
 
-<Layout title="Führerschein Kaufen Ohne Prüfung - Legal & Registriert | Führerschein Agentur">
+<Layout title="Führerschein Kaufen Ohne Prüfung - Legal & Registriert | Köln | Koeln-Fuehrerschein" description="Führerschein kaufen ohne Prüfung in Köln ✓ Legal & KBA registriert ✓ EU-weit gültig ✓ MPU umgehen ✓ Express-Lieferung 7-10 Tage. Jetzt unverbindlich beraten lassen!" schema={homeSchema}>
 	
 	<main class="overflow-x-hidden">
 		<!-- Hero Section -->
@@ -74,8 +150,9 @@ import Layout from '../layouts/Layout.astro';
                                 </a></li>
 								<li><a href="/eu-fuhrerschein-kaufen/fuhrerschein-in-tschechien-legal-kaufen" class="block px-6 py-4 hover:bg-white hover:text-blue-600 transition font-medium text-gray-700 flex justify-between items-center group">
                                     Tschechien Führerschein <span class="text-gray-300 group-hover:text-blue-600">→</span>
-                                </a></li>
-								<li><a href="/eu-fuhrerschein-kaufen/russischer-fuehrerschein-kaufen" class="block px-6 py-4 hover:bg-white hover:text-blue-600 transition font-medium text-gray-700 flex justify-between items-center group">
+                                </a></li>						<li><a href="/eu-fuhrerschein-kaufen/fuhrerschein-in-ungarn-kaufen" class="block px-6 py-4 hover:bg-white hover:text-blue-600 transition font-medium text-gray-700 flex justify-between items-center group">
+                                    Ungarn Führerschein <span class="text-gray-300 group-hover:text-blue-600">→</span>
+                                </a></li>								<li><a href="/eu-fuhrerschein-kaufen/russischer-fuehrerschein-kaufen" class="block px-6 py-4 hover:bg-white hover:text-blue-600 transition font-medium text-gray-700 flex justify-between items-center group">
                                     Russischer Führerschein <span class="text-gray-300 group-hover:text-blue-600">→</span>
                                 </a></li>
 								<li><a href="/eu-fuhrerschein-kaufen/ukrainischer-fuehrerschein-kaufen" class="block px-6 py-4 hover:bg-white hover:text-blue-600 transition font-medium text-gray-700 flex justify-between items-center group">
@@ -103,7 +180,7 @@ import Layout from '../layouts/Layout.astro';
 
 						<h2 class="text-3xl font-bold text-gray-900 mb-6">Deutscher Führerschein online kaufen ohne Prüfung – MPU umgehen</h2>
 						<p class="text-gray-600 mb-6 leading-relaxed">
-							Willkommen bei <strong>Führerschein Agentur</strong>, Ihrem zuverlässigen Partner, wenn es darum geht, einen deutschen Führerschein online zu kaufen – legal, registriert und ohne Prüfung. Wir verstehen, dass es Situationen im Leben gibt, in denen der reguläre Weg zum Führerschein versperrt oder unnötig erschwert ist. Sei es durch eine angeordnete MPU (Medizinisch-Psychologische Untersuchung), Prüfungsangst oder einfach Zeitmangel.
+							Willkommen bei <strong>Koeln-Fuehrerschein</strong>, Ihrem zuverlässigen Partner, wenn es darum geht, einen deutschen Führerschein online zu kaufen – legal, registriert und ohne Prüfung. Wir verstehen, dass es Situationen im Leben gibt, in denen der reguläre Weg zum Führerschein versperrt oder unnötig erschwert ist. Sei es durch eine angeordnete MPU (Medizinisch-Psychologische Untersuchung), Prüfungsangst oder einfach Zeitmangel.
 						</p>
 						<p class="text-gray-600 mb-6 leading-relaxed">
 							Unser Service ermöglicht es Ihnen, einen vollumfänglich gültigen EU-Führerschein zu erwerben, der in den offiziellen Datenbanken registriert ist. Damit können Sie in Deutschland und der gesamten EU legal Auto fahren, ohne rechtliche Konsequenzen fürchten zu müssen.

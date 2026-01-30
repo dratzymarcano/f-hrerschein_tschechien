@@ -1,8 +1,63 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const faqSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Sind Ihre Dokumente legal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, absolut. Der behördliche Führerschein und unsere Führerscheine sind identisch. Wir registrieren alle Dokumente in den offiziellen staatlichen Datenbanken (KBA, ZFER, EUCARIS). Bei einer Polizeikontrolle werden Ihre Daten gefunden und bestätigt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Woher weiß ich, dass Sie legitim sind?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wir sind seit über 18 Jahren im Geschäft und haben tausende zufriedene Kunden. Unsere transparente Arbeitsweise (Sie erhalten Prüfdokumente) und unser Kundensupport sprechen für sich."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie lange dauert die Lieferung?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Die Bearbeitungszeit variiert je nach Land, liegt aber in der Regel zwischen 5 und 14 Tagen. Sobald das Dokument fertiggestellt ist, versenden wir es per Express und stellen Ihnen eine Sendungsverfolgungsnummer zur Verfügung."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kann ich die Dokumente im Ausland nutzen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Da es sich um offizielle EU-Führerscheine handelt, sind diese in der gesamten EU und (mit internationalem Führerschein) auch weltweit gültig."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was ist, wenn ich Fehler auf dem Führerschein finde?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wir bitten Sie, vor der Produktion Ihre Daten zu prüfen. Sollte uns ein Fehler unterlaufen, korrigieren wir diesen selbstverständlich kostenfrei. Melden Sie sich dazu bitte umgehend beim Support."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Muss ich eine Prüfung ablegen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein. Das ist der Hauptvorteil unseres Services. Wir kümmern uns um alle bürokratischen Hürden. Sie müssen weder eine theoretische noch eine praktische Prüfung ablegen."
+      }
+    }
+  ]
+});
 ---
 
-<Layout title="FAQs | Häufig Gestellte Fragen">
+<Layout title="FAQs | Häufig Gestellte Fragen | Koeln-Fuehrerschein" description="Häufig gestellte Fragen zum Führerschein kaufen ohne Prüfung in Köln. Antworten zu Legalität, Lieferzeit, Kosten und mehr." schema={faqSchema}>
 	
 	<main class="bg-gray-50">
 		<!-- Hero Section -->
