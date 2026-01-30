@@ -1,0 +1,14 @@
+# Robots.txt for koeln-fuehrerschein.de
+# https://koeln-fuehrerschein.de
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://koeln-fuehrerschein.de/sitemap-index.xml
+
+# Disallow admin/internal paths (none currently)
+# Disallow: /admin/
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
