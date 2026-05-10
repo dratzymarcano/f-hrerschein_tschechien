@@ -22,7 +22,7 @@ export const POST: APIRoute = async ({ request }) => {
   const serviceLabel = service || 'Nicht angegeben';
 
   const { error } = await resend.emails.send({
-    from: 'Koeln-Fuehrerschein <noreply@koeln-fuehrerschein.de>',
+    from: 'Koeln-Fuehrerschein <contact@koeln-fuehrerschein.de>',
     to: ['contact@koeln-fuehrerschein.de'],
     replyTo: email,
     subject: `Neue Anfrage: ${serviceLabel} – ${name}`,
