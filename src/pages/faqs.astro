@@ -7,70 +7,70 @@ const faqSchema = JSON.stringify({
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Sind Ihre Dokumente legal?",
+      "name": "Wie funktioniert Ihr Service genau?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, absolut. Der behördliche Führerschein und unsere Führerscheine sind identisch. Wir registrieren alle Dokumente in den offiziellen staatlichen Datenbanken (KBA, ZFER, EUCARIS). Bei einer Polizeikontrolle werden Ihre Daten gefunden und bestätigt."
+        "text": "Wir sind eine Vermittlungsagentur, die Sie durch den gesamten Prozess des EU-Führerscheinerwerbs begleitet. Wir koordinieren alle Schritte: Beratung zu Ihren Optionen, Zusammenarbeit mit unseren Partnerfahrschulen im EU-Ausland, Übernahme aller Behördengänge und regelmäßige Status-Updates bis zur Aushändigung Ihres Führerscheins."
       }
     },
     {
       "@type": "Question",
-      "name": "Woher weiß ich, dass Sie legitim sind?",
+      "name": "Sind Ihre Dienstleistungen legal?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Wir sind seit über 18 Jahren im Geschäft und haben tausende zufriedene Kunden. Unsere transparente Arbeitsweise (Sie erhalten Prüfdokumente) und unser Kundensupport sprechen für sich."
+        "text": "Ja, vollständig. Wir nutzen das EU-Recht auf gegenseitige Anerkennung von Fahrerlaubnissen (3. EU-Führerscheinrichtlinie). Alle Führerscheine werden von offiziellen Behörden in EU-Mitgliedstaaten ausgestellt und sind in ganz Europa gültig. Der EuGH hat mehrfach bestätigt, dass Deutschland EU-Führerscheine aus anderen Mitgliedstaaten anerkennen muss."
       }
     },
     {
       "@type": "Question",
-      "name": "Wie lange dauert die Lieferung?",
+      "name": "Was genau übernehmen Sie für mich?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Die Bearbeitungszeit variiert je nach Land, liegt aber in der Regel zwischen 5 und 14 Tagen. Sobald das Dokument fertiggestellt ist, versenden wir es per Express und stellen Ihnen eine Sendungsverfolgungsnummer zur Verfügung."
+        "text": "Wir übernehmen: die Beratung zu Ihren rechtlichen Möglichkeiten, die Koordination mit unseren Partnerfahrschulen, alle erforderlichen Anmeldeformalitäten, die Wohnsitzanmeldung gemäß Wohnsitzprinzip, Behördengänge und Dokumentation sowie regelmäßige Updates zum Fortschritt Ihres Antrags."
       }
     },
     {
       "@type": "Question",
-      "name": "Kann ich die Dokumente im Ausland nutzen?",
+      "name": "Wie lange dauert der Prozess?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. Da es sich um offizielle EU-Führerscheine handelt, sind diese in der gesamten EU und (mit internationalem Führerschein) auch weltweit gültig."
+        "text": "Die Bearbeitungszeit variiert je nach gewähltem EU-Land und Führerscheinklasse. In der Regel begleiten wir Sie 3 bis 6 Wochen durch den Prozess. Wir halten Sie per E-Mail über jeden Schritt informiert."
       }
     },
     {
       "@type": "Question",
-      "name": "Was ist, wenn ich Fehler auf dem Führerschein finde?",
+      "name": "Ist der EU-Führerschein auch nach einer MPU-Anordnung in Deutschland gültig?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Wir bitten Sie, vor der Produktion Ihre Daten zu prüfen. Sollte uns ein Fehler unterlaufen, korrigieren wir diesen selbstverständlich kostenfrei. Melden Sie sich dazu bitte umgehend beim Support."
+        "text": "Das kommt auf Ihren individuellen Fall an. Wenn Ihre eventuelle Sperrfrist in Deutschland abgelaufen ist und das Wohnsitzprinzip (185-Tage-Regelung) korrekt eingehalten wird, muss Deutschland den EU-Führerschein gemäß EuGH-Rechtsprechung anerkennen. Wir beraten Sie kostenlos zu Ihrer konkreten Situation."
       }
     },
     {
       "@type": "Question",
-      "name": "Muss ich eine Prüfung ablegen?",
+      "name": "Was kostet Ihr Service?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nein. Das ist der Hauptvorteil unseres Services. Wir kümmern uns um alle bürokratischen Hürden. Sie müssen weder eine theoretische noch eine praktische Prüfung ablegen."
+        "text": "Unsere Preise variieren je nach Führerscheinklasse und Land. Wir erstellen Ihnen nach einer kostenlosen Erstberatung ein individuelles Angebot. Wir arbeiten ohne versteckte Kosten und informieren Sie transparent über alle anfallenden Gebühren."
       }
     }
   ]
 });
 ---
 
-<Layout title="FAQs | Häufig Gestellte Fragen | Koeln-Fuehrerschein" description="Häufig gestellte Fragen zum Führerschein kaufen ohne Prüfung in Köln. Antworten zu Legalität, Lieferzeit, Kosten und mehr." schema={faqSchema}>
-	
+<Layout title="FAQs | Häufige Fragen zum EU-Führerscheinerwerb | Koeln-Fuehrerschein" description="Häufig gestellte Fragen zu unserem Führerschein-Beratungsservice in Köln. Erfahren Sie, wie wir Sie durch den EU-Führerscheinprozess begleiten." schema={faqSchema}>
+
 	<main class="bg-gray-50">
 		<!-- Hero Section -->
 		<section class="bg-indigo-900 text-white py-24 relative overflow-hidden">
             <div class="absolute inset-0 bg-indigo-900 z-0"></div>
             <img src="/images/background-hero.webp" alt="Background" class="absolute inset-0 w-full h-full object-cover opacity-45 z-0 mix-blend-overlay" />
 			<div class="container mx-auto px-4 text-center relative z-10">
-                 <span class="inline-block py-1 px-4bg-indigo-800 text-indigo-200 text-sm font-semibold mb-6">
+                 <span class="inline-block py-1 px-4 bg-indigo-800 text-indigo-200 text-sm font-semibold mb-6">
                     Hilfecenter
                 </span>
 				<h1 class="text-4xl lg:text-6xl font-bold mb-6 tracking-tight">Häufig Gestellte Fragen</h1>
 				<p class="text-xl text-indigo-100 max-w-2xl mx-auto leading-relaxed">
-                    Hier finden Sie Antworten auf die wichtigsten Fragen rund um den Führerscheinerwerb.
+                    Hier finden Sie Antworten auf die wichtigsten Fragen zu unserem Beratungsservice und dem EU-Führerscheinerwerb.
                 </p>
 			</div>
 		</section>
@@ -78,19 +78,19 @@ const faqSchema = JSON.stringify({
 		<!-- FAQs Section -->
 		<section class="py-24">
 			<div class="container mx-auto px-4 max-w-3xl">
-                
+
                 <div class="space-y-4">
                     <!-- Q1 -->
                     <div class="bg-white  shadow-md overflow-hidden border border-gray-100">
                         <details class="group">
                             <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 bg-white hover:bg-gray-50 transition-colors">
-                                <span class="text-lg font-bold text-gray-900">Sind Ihre Dokumente legal?</span>
+                                <span class="text-lg font-bold text-gray-900">Wie funktioniert Ihr Service genau?</span>
                                 <span class="transition group-open:rotate-180">
                                     <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
                                 </span>
                             </summary>
                             <div class="text-gray-600 px-6 pb-6 pt-0 leading-relaxed">
-                                <p>Ja, absolut. Der behördliche Führerschein und unsere Führerscheine sind identisch. Wir registrieren alle Dokumente in den offiziellen staatlichen Datenbanken (KBA, ZFER, EUCARIS). Bei einer Polizeikontrolle werden Ihre Daten gefunden und bestätigt.</p>
+                                <p>Wir sind eine Vermittlungsagentur, die Sie durch den gesamten Prozess des EU-Führerscheinerwerbs begleitet. Wir koordinieren alle Schritte: Beratung zu Ihren Optionen, Zusammenarbeit mit unseren Partnerfahrschulen im EU-Ausland, Übernahme aller Behördengänge und regelmäßige Status-Updates bis zur Aushändigung Ihres Führerscheins.</p>
                             </div>
                         </details>
                     </div>
@@ -99,13 +99,13 @@ const faqSchema = JSON.stringify({
                     <div class="bg-white  shadow-md overflow-hidden border border-gray-100">
                         <details class="group">
                             <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 bg-white hover:bg-gray-50 transition-colors">
-                                <span class="text-lg font-bold text-gray-900">Woher weiß ich, dass Sie legitim sind?</span>
+                                <span class="text-lg font-bold text-gray-900">Sind Ihre Dienstleistungen legal?</span>
                                 <span class="transition group-open:rotate-180">
                                     <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
                                 </span>
                             </summary>
                             <div class="text-gray-600 px-6 pb-6 pt-0 leading-relaxed">
-                                <p>Wir sind seit über 18 Jahren im Geschäft und haben tausende zufriedene Kunden. Unsere transparente Arbeitsweise (Sie erhalten Prüfdokumente) und unser Kundensupport sprechen für sich.</p>
+                                <p>Ja, vollständig. Wir nutzen das EU-Recht auf gegenseitige Anerkennung von Fahrerlaubnissen (3. EU-Führerscheinrichtlinie). Alle Führerscheine werden von offiziellen Behörden in EU-Mitgliedstaaten ausgestellt und sind in ganz Europa gültig. Der EuGH hat mehrfach bestätigt, dass Deutschland EU-Führerscheine aus anderen Mitgliedstaaten anerkennen muss.</p>
                             </div>
                         </details>
                     </div>
@@ -114,13 +114,13 @@ const faqSchema = JSON.stringify({
                     <div class="bg-white  shadow-md overflow-hidden border border-gray-100">
                         <details class="group">
                             <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 bg-white hover:bg-gray-50 transition-colors">
-                                <span class="text-lg font-bold text-gray-900">Wie lange dauert die Lieferung?</span>
+                                <span class="text-lg font-bold text-gray-900">Was genau übernehmen Sie für mich?</span>
                                 <span class="transition group-open:rotate-180">
                                     <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
                                 </span>
                             </summary>
                             <div class="text-gray-600 px-6 pb-6 pt-0 leading-relaxed">
-                                <p>Die Bearbeitungszeit variiert je nach Land, liegt aber in der Regel zwischen <strong>5 und 14 Tagen</strong>. Sobald das Dokument fertiggestellt ist, versenden wir es per Express und stellen Ihnen eine Sendungsverfolgungsnummer zur Verfügung.</p>
+                                <p>Wir übernehmen: die Beratung zu Ihren rechtlichen Möglichkeiten, die Koordination mit unseren Partnerfahrschulen, alle erforderlichen Anmeldeformalitäten, die Wohnsitzanmeldung gemäß Wohnsitzprinzip, Behördengänge und Dokumentation sowie regelmäßige Updates zum Fortschritt Ihres Antrags.</p>
                             </div>
                         </details>
                     </div>
@@ -129,13 +129,13 @@ const faqSchema = JSON.stringify({
                     <div class="bg-white  shadow-md overflow-hidden border border-gray-100">
                         <details class="group">
                             <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 bg-white hover:bg-gray-50 transition-colors">
-                                <span class="text-lg font-bold text-gray-900">Kann ich die Dokumente im Ausland nutzen?</span>
+                                <span class="text-lg font-bold text-gray-900">Wie lange dauert der Prozess?</span>
                                 <span class="transition group-open:rotate-180">
                                     <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
                                 </span>
                             </summary>
                             <div class="text-gray-600 px-6 pb-6 pt-0 leading-relaxed">
-                                <p>Ja. Da es sich um offizielle EU-Führerscheine handelt, sind diese in der gesamten EU und (mit internationalem Führerschein) auch weltweit gültig.</p>
+                                <p>Die Bearbeitungszeit variiert je nach gewähltem EU-Land und Führerscheinklasse. In der Regel begleiten wir Sie <strong>3 bis 6 Wochen</strong> durch den Prozess. Wir halten Sie per E-Mail über jeden Schritt informiert.</p>
                             </div>
                         </details>
                     </div>
@@ -144,13 +144,13 @@ const faqSchema = JSON.stringify({
                     <div class="bg-white  shadow-md overflow-hidden border border-gray-100">
                         <details class="group">
                             <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 bg-white hover:bg-gray-50 transition-colors">
-                                <span class="text-lg font-bold text-gray-900">Was ist, wenn ich Fehler auf dem Führerschein finde?</span>
+                                <span class="text-lg font-bold text-gray-900">Ist der EU-Führerschein auch nach einer MPU-Anordnung in Deutschland gültig?</span>
                                 <span class="transition group-open:rotate-180">
                                     <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
                                 </span>
                             </summary>
                             <div class="text-gray-600 px-6 pb-6 pt-0 leading-relaxed">
-                                <p>Wir bitten Sie, vor der Produktion Ihre Daten zu prüfen. Sollte uns ein Fehler unterlaufen, korrigieren wir diesen selbstverständlich kostenfrei. Melden Sie sich dazu bitte umgehend beim Support.</p>
+                                <p>Das kommt auf Ihren individuellen Fall an. Wenn Ihre eventuelle Sperrfrist in Deutschland abgelaufen ist und das Wohnsitzprinzip (185-Tage-Regelung) korrekt eingehalten wird, muss Deutschland den EU-Führerschein gemäß EuGH-Rechtsprechung anerkennen. Wir beraten Sie kostenlos zu Ihrer konkreten Situation.</p>
                             </div>
                         </details>
                     </div>
@@ -159,13 +159,13 @@ const faqSchema = JSON.stringify({
                     <div class="bg-white  shadow-md overflow-hidden border border-gray-100">
                         <details class="group">
                             <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 bg-white hover:bg-gray-50 transition-colors">
-                                <span class="text-lg font-bold text-gray-900">Muss ich eine Prüfung ablegen?</span>
+                                <span class="text-lg font-bold text-gray-900">Was kostet Ihr Service?</span>
                                 <span class="transition group-open:rotate-180">
                                     <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
                                 </span>
                             </summary>
                             <div class="text-gray-600 px-6 pb-6 pt-0 leading-relaxed">
-                                <p>Nein. Das ist der Hauptvorteil unseres Services. Wir kümmern uns um alle bürokratischen Hürden. Sie müssen weder eine theoretische noch eine praktische Prüfung ablegen.</p>
+                                <p>Unsere Preise variieren je nach Führerscheinklasse und Land. Wir erstellen Ihnen nach einer kostenlosen Erstberatung ein individuelles Angebot. Wir arbeiten ohne versteckte Kosten und informieren Sie transparent über alle anfallenden Gebühren.</p>
                             </div>
                         </details>
                     </div>
@@ -174,9 +174,9 @@ const faqSchema = JSON.stringify({
 
                 <div class="mt-16 bg-blue-50  p-8 text-center border border-blue-100">
                     <h3 class="text-xl font-bold text-gray-900 mb-4">Noch Fragen offen?</h3>
-                    <p class="text-gray-600 mb-6">Unser Team hilft Ihnen gerne weiter.</p>
-                    <a href="/kontakt" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8  transition duration-300 shadow-md">
-                        Kontaktieren Sie Uns
+                    <p class="text-gray-600 mb-6">Unser Team hilft Ihnen gerne weiter – kostenlos und unverbindlich.</p>
+                    <a href="/kontakt/" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8  transition duration-300 shadow-md">
+                        Kostenlos Anfragen
                     </a>
                 </div>
 
